@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nobodysfool</title>
+	 <meta charset = "utf-8">
+      <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">      
+      <!-- Bootstrap -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <!-- Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Custom style -->
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" type="text/css" href="navbar_bottom.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+.side-left > .feed {
+    float: left;
+    width: 490px;
+    padding-top: 14px;
+}
+
+.body2{
+	 font-size: 14px;
+    line-height: 1;
+    font-family: Arial,sans-serif;
+    background-color: #f8f8f8;
+    color: #000;
+	padding-left: 10%;
+    padding-right: 10%
+}
+.feed__section {
+    margin-bottom: 17px;
+    padding-right: 20px;
+}
+.feed__section--title {
+    font: bold 16px Arial;
+    color: #22579e;
+    margin: 0 0 7px 53px;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+.feed__section--top {
+    color: #9d9d9d;
+    margin: 0;
+    font-size: 11px;
+    padding-left: 0px;
+    line-height: normal;
+    list-style: none;
+}
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+.feed__section--more {
+    text-align: right;
+    padding-right: 10px;
+}
+div {
+    display: block;
+}     	
+</style>
+</head>
+<body>
+
+ <!-- This is what you see when you click "Archieved News" 
+(top bar) -->
+
+<!-- Top Bar -->
+<nav class="navbar navbar-inverse top_bar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="true">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>  
+      </button>
+    </div>
+    <div class="navbar-collapse collapse in" id="myNavbar" aria-expanded="true">
+      <ul class="nav navbar-nav">
+        <li>
+          <a class="left_mg30 active top_bar_text border_right" href="sign_up.html" id="sign_up">Sign Up </a>
+      </li>
+      <li><div class="stick">|</div></li>
+
+        <li>
+          <a  class="top_bar_text active left_mg40" href="login.html">Login</a>
+        </li>
+        <li><div class="stick">|</div></li>
+
+        <li>
+          <a class="active left_mg40" href="https://en.wikipedia.org/wiki/RSS" target="_blank">RSS Feeds</a>
+        </li>
+       <li><div class="stick">|</div></li>
+
+        <li><a class="active left_mg40" href="news.html">Archived News</a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="inline">
+          <a href="https://www.instagram.com/" target="_blank">
+            <div class="circle active2 left_mg0">
+            <i class="fa fa-instagram font_awesome" aria-hidden="true"></i>
+          </div>
+           </a>
+      </li>
+      <li class="inline">
+            <a href="https://twitter.com/" target="_blank">
+              <div class="circle active2 left_mg0">
+              <i class="fa fa-twitter font_awesome" aria-hidden="true"></i>
+            </div>
+          </a>
+      </li>
+      <li class="inline">
+          <a href="https://ru.pinterest.com/" target="_blank">
+              <div class="circle active2 left_mg0">
+              <i class="fa fa-pinterest font_awesome" aria-hidden="true"></i>
+            </div>
+          </a>
+      </li>
+      <li class="inline">
+            <a href="https://plus.google.com/?hl=uk" target="_blank">
+              <div class="circle active2 left_mg0">
+              <i class="fa fa-google-plus font_awesome" aria-hidden="true"></i>
+            </div>
+          </a>
+      </li>
+      <li class="inline">
+            <a href="https://en.wikipedia.org/wiki/RSS" target="_blank">
+              <div class="circle active2 left_mg0">
+              <i class="fa fa-rss font_awesome" aria-hidden="true"></i>
+            </div>
+          </a>
+      </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+
+<div class="container-fluid header">
+  <a class="nav_link" href="index.html">
+    <div class="nav_name border_bottom" tabindex="0">
+      <div class="nav_text">
+          HOMEPAGE
+      </div>
+    </div>
+  </a>
+  <a class="nav_link" href="index.html">
+    <div class="nav_name border_bottom" tabindex="0">
+      <div class="nav_text">
+        STYLE DEMO
+      </div>
+    </div>
+  </a>
+  <a class="nav_link" href="index.html">
+    <div class="nav_name border_bottom" tabindex="0">
+      <div class="nav_text">
+        FULL WIDTH
+      </div>
+    </div>
+  </a>
+  <a class="nav_link" href="index.html">
+    <div class="nav_name border_bottom" tabindex="0">
+      <div class="nav_text">
+        DROPDOWN
+      </div>
+    </div>
+  </a>
+  <a class="nav_link" href="javascript:alert('This page doesnt exist yet. You can help me by creating it');">
+    <div class="nav_name border_bottom" tabindex="0">
+      <div class="nav_text">
+        GALLERY
+      </div>
+    </div>
+  </a>
+  <a class="nav_link" href="javascript:alert('This page doesnt exist yet. You can help me by creating it');">
+    <div class="nav_name border_bottom" tabindex="0">
+      <div class="nav_text">
+        PORTFOLIO
+      </div>
+    </div>
+  </a>
+  <a class="nav_link" href="javascript:alert('This page doesnt exist yet. You can help me by creating it');">
+    <div class="nav_name border_bottom" tabindex="0">
+      <div class="nav_text">
+        LINK TEXT
+      </div>
+    </div>
+  </a>
+  <a class="nav_link" href="javascript:alert('This page doesnt exist yet. You can help me by creating it');">
+    <div class="nav_name border_bottom" tabindex="0">
+      <div class="nav_text">
+        LONG LINK TEXT
+      </div>
+    </div>
+  </a>
+</div>
+
+<!-- WebSiteName and Search -->
+
+<nav class="navbar navbar-inverse WebsiteNameAndSearch_div" id="search">
+    <div class="container-fluid WebsiteNameAndSearch_div">
+      <div class="navbar-header">
+          <a class="navbar-brand nav_brand" href="#">NobodysFool
+            <p class="brand_description">Free PSD Websiter Template</p>
+         </a>
+      </div>
+      <ul class="nav navbar-nav navbar-right margins">
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2 search_input" type="text" placeholder="Search Our Website...">
+            <button class="btn btn-outline-success my-2 my-sm-0 button">Search</button>
+        </form>
+      </ul>
+    </div>
+</nav>
+
+<div class="body2">
+
+<article class="feed" id="feed"><section class="feed__section">
+
+<h2 class="feed__section--title">
+<a lc="810" href="//www.ukr.net/news/politika.html">Політика</a>
+</h2>
+
+<div class="feed__item">
+<time>19:12</time>
+<div class="feed__item--title">
+<a nc="52506009,12,28702048" href="http://www.5.ua/polityka/na-zlodiievi-shapka-horyt-polskyi-ekspert-prokomentuvav-zaiavu-rf-shchodo-eskalatsii-na-donbasi-137748.html" target="_blank" rel="nofollow">"На злодієві шапка горить": польський експерт прокоментував заяву РФ щодо ескалації на Донбасі</a>
+<span>(5 канал)</span>
+</div>
+</div>
+
+<div class="feed__item">
+<time>18:55</time>
+<div class="feed__item--title">
+<a nc="52505755,12,28696336" href="http://socportal.info/2017/02/05/u-kongres-ssha-povtorno-vnesli-zakonoproekt-na-pidtrimku-ukrayini.html" target="_blank" rel="nofollow">У конгрес США повторно внесли законопроект на підтримку України</a>
+<span>(Соцпортал)</span>
+</div>
+</div>
+
+<div class="feed__item">
+<time>18:50</time>
+<div class="feed__item--title">
+<a nc="52505715,12,28701877" href="http://glavcom.ua/video/chomu-nazk-ne-pereviryaje-elektronni-deklaraciji-396769.html" target="_blank" rel="nofollow">Чому НАЗК не перевіряє електронні декларації</a>
+<span>(Главком)</span>
+</div>
+</div>
+
+<div class="feed__item">
+<time>18:35</time>
+<div class="feed__item--title">
+<a nc="52505513,12,28698708" href="http://fakty.ua/229980-es-prodlit-personalnye-sankcii-v-otnoshenii-rossijskih-chinovnikov-ecshe-na-polgoda---bloomberg" target="_blank" rel="nofollow">ЕС продлит персональные санкции в отношении российских чиновников еще на полгода - Bloomberg</a>
+<span>(Факты и комментарии)</span>
+</div>
+</div>
+
+<div class="feed__item">
+<time>18:30</time>
+<div class="feed__item--title">
+<a nc="52505417,12,28699329" href="http://gazeta.ua/articles/life/_nazvali-novu-versiyu-vbivstva-seremeta/750817" target="_blank" rel="nofollow">Назвали нову версію вбивства Шеремета</a>
+<span>(Gazeta.ua)</span>
+</div>
+</div>
+
+
+<div class="feed__section--more">
+<a lc="796" href="//www.ukr.net/news/politika.html">всі політичні новини України</a>
+</div>
+</section><section class="feed__section">
+
+<h2 class="feed__section--title">
+<a lc="811" href="//www.ukr.net/news/jekonomika.html">Економіка</a>
+</h2>
+
+
+<div class="feed__item">
+<time>19:27</time>
+<div class="feed__item--title">
+<a nc="52506217,3,28693653" href="https://www.facenews.ua/news/2017/349523/" target="_blank" rel="nofollow">Юрист назвал самый худший сценарий для коммунальных должников</a>
+<span>(Facenews)</span>
+</div>
+</div>
+
+<div class="feed__item">
+<time>19:23</time>
+<div class="feed__item--title">
+<a nc="52506171,3,28678095" href="http://protv.ua/news/telecommunications/kiprskiy_sud_zablokiroval_aktsii_kompanii_ahmetova/" target="_blank" rel="nofollow">Кипрский суд заблокировал акции компании Ахметова</a>
+<span>(proTV)</span>
+</div>
+</div>
+
+<div class="feed__item">
+<time>18:18</time>
+<div class="feed__item--title">
+<a nc="52505253,3,28691506" href="https://strana.ua/news/54037-ukraina-snizila-eksport-podsolnechnika-bolee-chem-na-polovinu.html" target="_blank" rel="nofollow">Экспорт украинского подсолнечника упал на 64%</a>
+<span>(Страна.ua)</span>
+</div>
+</div>
+
+<div class="feed__item">
+<time>18:01</time>
+<div class="feed__item--title">
+<a nc="52505012,3,28699486" href="https://politeka.net/403697-kommunalka-2017-kak-umenshit-potreblenie-tepla/" target="_blank" rel="nofollow">Коммуналка-2017: как уменьшить потребление тепла</a>
+<span>(Politeka)</span>
+</div>
+</div>
+
+<div class="feed__item">
+<time>18:00</time>
+<div class="feed__item--title">
+<a nc="52505008,3,28701455" href="https://vechirniykiev.com.ua/news/deshevi-banany-i-doroha-komunalka-shcho-ochikuye-ukrayintsiv" target="_blank" rel="nofollow">Дешеві банани і дорога комуналка – що очікує українців?</a>
+<span>(Вечірній Київ)</span>
+</div>
+</div>
+
+
+<div class="feed__section--more">
+<a lc="797" href="//www.ukr.net/news/jekonomika.html">всі новини економіки та фінансів</a>
+</div>
+</section><section class="feed__section">
+
+<h2 class="feed__section--title">
+<a lc="812" href="//www.ukr.net/news/proisshestvija.html">Події</a>
+</h2>
+
+
+<div class="feed__item">
+<time>19:49</time>
+<div class="feed__item--title">
+<a nc="52506474,2,28702154" href="http://informator.news/brytanskyj-korespondent-rozpoviv-podrobytsi-poranennya-v-avdijivtsi/" target="_blank" rel="nofollow">Британський кореспондент розповів подробиці поранення в Авдіївці</a>
+<span>(Інформатор)</span>
+</div>
+</div>
+
+<div class="feed__item">
+<time>19:46</time>
+<div class="feed__item--title">
+<a nc="52506446,2,28702299" href="http://expres.ua/news/2017/02/05/226678-aferysty-naduryly-bank-vyyavyvshy-nedolik-programi-vynagorod-nakopychennya" target="_blank" rel="nofollow">Аферисти надурили банк, виявивши недолiк у програмi винагород iз накопичення балiв</a>
+<span>(Експрес online)</span>
+</div>
+</div>
+
+<div class="feed__item">
+<time>19:45</time>
+<div class="feed__item--title">
+<a nc="52506441,2,28702296" href="http://fakty.ua/229983-v-kremenchuge-rybak-cenoj-sobstvennoj-zhizni-spas-sobaku" target="_blank" rel="nofollow">В Кременчуге рыбак ценой собственной жизни спас собаку</a>
+<span>(Факты и комментарии)</span>
+</div>
+</div>
+
+<div class="feed__item">
+<time>19:44</time>
+<div class="feed__item--title">
+<a nc="52506426,2,28702287" href="http://zaxid.net/news/showNews.do?u_kiyevi_stalosya_masove_otruyennya_ditey_hudozhnih_i_muzichnih_shkil&amp;objectId=1417032" target="_blank" rel="nofollow">У Києві сталося масове отруєння дітей художніх і музичних шкіл</a>
+<span>(Zaxid.net)</span>
+</div>
+</div>
+
+<div class="feed__item">
+<time>19:40</time>
+<div class="feed__item--title">
+<a nc="52506380,2,28700045" href="http://oligarh.org.ua/node/5399" target="_blank" rel="nofollow">В Нацбанке назвали пять проколов орлов Луценко в деле Шацкого</a>
+<span>(Олигарх)</span>
+</div>
+</div>
+
+
+<div class="feed__section--more">
+<a lc="798" href="//www.ukr.net/news/proisshestvija.html">всі новини подій, аварій, катастроф</a>
+</div>
+</section><section class="feed__section">
+
+<h2 class="feed__section--title">
+<a lc="817" href="//www.ukr.net/news/society.html">Суспільство</a>
+</h2>
+
+
+<div class="feed__item">
+<time>19:51</time>
+<div class="feed__item--title">
+<a nc="52506505,5,28701539" href="http://news.eizvestia.com/news-culture/full/148-skripachka-tronula-socseti-gimnom-ukrainy-v-razrushennom-zdanii-avdeevki-video" target="_blank" rel="nofollow">Скрипачка тронула соцсети гимном Украины в разрушенном здании Авдеевки</a>
+<span>(Экономические известия)</span>
+</div>
+</div>
+
+<div class="feed__item">
+<time>19:39</time>
+<div class="feed__item--title">
+<a nc="52506373,5,28702263" href="https://strana.ua/news/54047-gubernator-odesskoj-oblasti-ishet-zamov-na-zarplatu-v-9-i-8-tysyach-griven.html" target="_blank" rel="nofollow">Губернатор Одесской области ищет замов на зарплату в 9 и 8 тысяч гривен</a>
+<span>(Страна.ua)</span>
+</div>
+</div>
+
+<div class="feed__item">
+<time>19:38</time>
+<div class="feed__item--title">
+<a nc="52506366,5,28702259" href="http://tyzhden.ua/News/184772" target="_blank" rel="nofollow">Киян попередили про сильні снігопади</a>
+<span>(Тиждень.ua)</span>
+</div>
+</div>
+
+<div class="feed__item">
+<time>19:37</time>
+<div class="feed__item--title">
+<a nc="52506351,5,28702250" href="http://region.unn.ua/uk/news/102901-umanska-prokuratura-perevirila-koloniyi-na-dotrimannya-zakonu" target="_blank" rel="nofollow">Уманська прокуратура перевірила колонії на дотримання закону</a>
+<span>(UNN-Центр)</span>
+</div>
+</div>
+
+<div class="feed__item">
+<time>19:24</time>
+<div class="feed__item--title">
+<a nc="52506181,5,28702152" href="https://rupor.info/news/120637/7-fevralya-na-territorii-ukrainy-nastupit-sereznoe-poholodanie" target="_blank" rel="nofollow">7 февраля на территории Украины наступит серьезное похолодание</a>
+<span>(Рупор)</span>
+</div>
+</div>
+
+
+
+
+</section><section class="feed__section">
+
+<h2 class="feed__section--title">
+<a lc="813" href="//www.ukr.net/news/tehnologii.html">Технології</a>
+</h2>
+
+
+<div class="feed__item">
+<time>19:40</time>
+<div class="feed__item--title">
+<a nc="52506378,7,28702164" href="http://telegraf.com.ua/tehnologii/3141887-kak-budut-vyiglyadet-smartfonyi-v-budushhem.html" target="_blank" rel="nofollow">Как будут выглядеть смартфоны в будущем</a>
+<span>(Телеграф)</span>
+</div>
+</div>
+
+<div class="feed__item">
+<time>19:40</time>
+<div class="feed__item--title">
+<a nc="52506382,7,28699987" href="http://navkolonas.com/archives/25266" target="_blank" rel="nofollow">Вони полюють на вашi картки</a>
+<span>(Navkolonas.com)</span>
+</div>
+</div>
+
+<div class="feed__item">
+<time>19:38</time>
+<div class="feed__item--title">
+<a nc="52506356,7,28702254" href="http://protv.ua/news/mobile/okkupantyi_pridumali_kak_obespechit_kryim_mobilnoy_svyazyu/" target="_blank" rel="nofollow">Оккупанты придумали, как обеспечить Крым мобильной связью</a>
+<span>(proTV)</span>
+</div>
+</div>
+
+<div class="feed__item">
+<time>19:38</time>
+<div class="feed__item--title">
+<a nc="52506371,7,28702261" href="http://portaltele.com.ua/equipment/electicity/kak-opredelit-stepen-iznosa-batarei-macbook-2.html" target="_blank" rel="nofollow">Как определить степень износа батареи MacBook</a>
+<span>(Portaltele.com.ua)</span>
+</div>
+</div>
+
+<div class="feed__item">
+<time>19:37</time>
+<div class="feed__item--title">
+<a nc="52506348,7,28702247" href="https://mobilius.net/1006-kitayskie-smartfony-muhlyuyut-v-testah-na-proizvoditelnost.html" target="_blank" rel="nofollow">Китайские смартфоны мухлюют в тестах на производительность</a>
+<span>(Mobilius)</span>
+</div>
+</div>
+
+
+<div class="feed__section--more">
+<a lc="799" href="//www.ukr.net/news/tehnologii.html">всі новини інформаційних технологій</a>
+</div>
+</section><section class="feed__section">
+
+<h2 class="feed__section--title">
+<a lc="829" href="//www.ukr.net/news/science.html">Наука</a>
+</h2>
+
+
+<div class="feed__item">
+<time>19:38</time>
+<div class="feed__item--title">
+<a nc="52506367,22,28702260" href="https://journalist.today/polnostyu-paralizovannye-lyudi-poluchili-vozmozhnost-obshhatsya/" target="_blank" rel="nofollow">Полностью парализованные люди получили возможность общаться</a>
+<span>(Журналіст)</span>
+</div>
+</div>
+
+<div class="feed__item">
+<time>19:15</time>
+<div class="feed__item--title">
+<a nc="52506047,22,28698731" href="http://10minut.info/2017/02/uchenye-nasa-obnaruzhili-dyru-na-solnce-video/" target="_blank" rel="nofollow">Ученые NASA обнаружили дыру на Солнце (ВИДЕО)</a>
+<span>(10minut.info)</span>
+</div>
+</div>
+
+<div class="feed__item">
+<time>19:14</time>
+<div class="feed__item--title">
+<a nc="52506032,22,28701675" href="https://people.in.ua/2017/02/news/u-galaktitsi-chumatskij-shlyah-znajshli-prihovanu-chornu-diru/" target="_blank" rel="nofollow">У галактиці Чумацький Шлях знайшли приховану чорну діру</a>
+<span>(PEOPLE.IN)</span>
+</div>
+</div>
+
+<div class="feed__item">
+<time>19:10</time>
+<div class="feed__item--title">
+<a nc="52505979,22,28702034" href="http://expres.ua/news/2017/02/05/226657-meksykanskomu-kaktusovi-zagrozhuye-znyknennya" target="_blank" rel="nofollow">Мексиканському кактусові загрожує зникнення</a>
+<span>(Експрес online)</span>
+</div>
+</div>
+</section></article>
+</div>
+
+<!-- Footer -->
+
+<div class="footer container">
+<div class="row">
+  <div class="col-xs-12 col-sm-6 col-md-3 mg_bottom30">
+    <h4 class="media-heading">ABOUT US</h4>
+      <div class="media">
+        <img src="../images/nobodysfool_cut4.png" class="img_bottom">
+      </div>
+    <p class="mg_top20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam culpa veritatis, doloribus vitae, dolorum suscipit non. Quos eaque, architecto. Quam culpa veritatis, doloribus vitae, dolorum suscipit non.</p>
+    <a class="link-text" href="#">Read more <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-3 mg_bottom30">
+    <h4 class="media-heading" style="margin-top:40px; ">QUICK LINKS</h4>
+      <ul  style="margin-top:20px; text-decoration-color: #2e2e2e;">
+        <li class="link-item li">
+          <span>
+            <a class="link" href="#">Lorem ipsum dolor sit amet</a>
+            
+          </span>
+        </li>
+          <li class="link-item li">
+          <span>
+            <a class="link" href="#">Amet consectatur</a>
+          </span>
+          </li>
+        <li class="link-item li">
+        <span>
+            <a class="link" href="#">Praesent vel sem id</a>
+          </span>
+          </li>
+          <li class="link-item li">
+          <span>
+            <a class="link" href="#">Curabitor hendrerit est</a>
+          </span>
+          </li>
+          <li class="link-item li">
+          <span>
+            <a class="link" href="#">Aliquam eget erat nec sapien</a>
+          </span>
+          </li>
+          <li class="link-item li">
+          <span>
+            <a class="link" href="#">Cras id augue nunc</a>
+          </span>
+          </li>
+          <li class="link-item li">
+          <span>
+            <a class="link" href="#">In nec justo non</a>
+          </span>
+          </li>
+          <li class="link-item li">
+          <span>
+            <a class="link" href="#">Vivamus mollis enim ut</a>
+          </span>
+          </li>
+          <li class="link-item li">
+          <span>
+            <a class="link" href="#">Curabitor hendrerit est</a>
+          </span>
+          </li>
+          <li class="link-item li">
+          <span>
+              <a class="link" href="#">Sed a nulla urna</a>
+            </span>
+            </li>
+        </ul>
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-3 part">
+    <h4 class="media-heading">LATER BLOG POSTS</h4>
+      <strong>Post Title</strong>
+        <p>Admin, Friday 6th April 2000.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam culpa veritatis, doloribus vitae, dolorum suscipit non. Quos eaque, architecto perspiciatis.</p>
+      <a class="link-text-second" href="#">Read more <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+      <strong>Post Title</strong>
+        <p>Admin, Friday 6th April 2000.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam culpa veritatis, doloribus vitae, dolorum suscipit non. Quos eaque, architecto perspiciatis.</p>
+      <a class="link-text-second" href="#">Read more <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-3 part contact">
+    <h4 class="media-heading">CONTACT US</h4>
+      <input type="text" class="form-control contact_form" name="Lastname" placeholder="Name" style="margin-top:30px;">
+      <input type="text" class="form-control contact_form" name="Email" placeholder="Email" style="">
+      <input type="text" class="form-control contact_form" name="Subject" placeholder="Subject" style="">
+      <input type="text" class="form-control contact_form" name="Messange" placeholder="Messange" style=" height: 80px;">
+      <button type="submit" name="button" class="btn btn-success contact_us_button">SUBMIT</button>
+  </div>
+</div>
+</div>
+<div class="row-bottom">        
+    <div class="col-xs-6 col-md-6">
+      <span class="textbottom">
+        <p class="row_text">Copyright <i class="fa fa-copyright row_text" aria-hidden="true"> 2017 Domain Name-All Rights Reserved</i> 
+      </span>
+    </div>
+  <div class="col-xs-6 col-md-6 text-right">
+  <span class="textbottom">
+      <p class="row_text template">Template by OS Templates</p>
+    </span>
+    </div>
+</div>
+
+</body>
+</html>
